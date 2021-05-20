@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "angel-co-scrape",
+  "version": "1.0",
+  "description": "Gives option to scrape content from angel.co",
+  "homepage_url": "https://github.com/ajisaac",
+  "icons": {
+    "48": "icons/angel-icon-48.png",
+    "96": "icons/angel-icon-96.png",
+    "144": "icons/angel-icon-144.png"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "browser_action": {
+    "default_icon": "icons/angel-icon-144.png",
+    "default_title": "angel.co job scrape",
+    "default_popup": "popup/scrape-angel-co.html"
+  }
+}
