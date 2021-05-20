@@ -112,6 +112,12 @@
         break
       }
     }
+    for (let a of node.getElementsByTagName("button")) {
+      if (a.innerText === "Apply now") {
+        correctTitleTag = true
+        break
+      }
+    }
     if (!correctTitleTag) {
       return
     }
@@ -192,6 +198,7 @@
 
   parseDocument()
 
+  console.log(results)
   navigator.clipboard.writeText(JSON.stringify(results))
       .then(r => {
       })
